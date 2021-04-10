@@ -30,7 +30,7 @@ Didalam SIPP, terdapat juga beberapa package yang di download. Antara lain :
 Untuk asset yang digunakan disini hanyalah gambar dari **Icons8** dan **Flaticon**.
 
 ### Screenshot SIPP
-![Tampilan Dashboard](https://raw.githubusercontent.com/suryamsj/SIPP/81afbf0a8e06fddf7087c269962a9595fbd4ceb3/screenshot/Dashboard.PNG)
+![Tampilan Dashboard](https://raw.githubusercontent.com/suryamsj/SIPP/main/screenshot/Dashboard.PNG)
 ![Tampilan Data Pengeluaran](https://raw.githubusercontent.com/suryamsj/SIPP/main/screenshot/Data%20Pengeluaran.PNG)
 ![Tampilan Cari Pengeluaran](https://raw.githubusercontent.com/suryamsj/SIPP/main/screenshot/Cari%20Pengeluaran.PNG)
 ![Tampilan Laporan Pengeluaran](https://raw.githubusercontent.com/suryamsj/SIPP/main/screenshot/Laporan%20Pengeluaran.PNG)
