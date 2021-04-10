@@ -1,2 +1,34 @@
-# SIPP
- SIPP adalah singkatan dari Sistem Informasi Pencatatan Pengeluaran. SIPP dibuat menggunakan konsep OOP dan bahasa pemrograman C# 
+# Sistem Informasi Pencatatan Pengeluaran (SIPP)
+
+### Tentang SIPP
+**SIPP** adalah singkatan dari Sistem Informasi Pencatatan Pengeluaran. SIPP dibuat menggunakan konsep OOP dan bahasa pemrograman C#.
+
+### Menu dan Fitur
+**SIPP** memiliki beberapa menu dan fitur seperti layaknya aplikasi pencatatan pengeluaran yaitu :
+- **Dashboard** : dimenu ini user bisa melihat informasi terkait pengeluar hari ini, bulan ini, tahun ini, paling mahal dan paling murah.
+- **Data Pengeluaran** : dimenu data pengeluaran user bisa menambahkan, mengubah dan menghapus data pengeluaran.
+- **Cari Pengeluaran** : dimenu cari pengeluaran user bisa mencari barang dsb untuk melihat seberapa banyak pengeluaran untuk barang atau non barang tersebut. Dimenu ini juga terdapat beberapa informasi yang dapat memudahkan user untuk memahami seberapa besar pengeluarannya.
+- **Laporan Pengeluaran** : dimenu laporan pengeluaran ini user bisa melakukan export data ke excel atau langsung print atau simpan data ke bentuk pdf. Data yang dilaporkan adalah data per bulan dan tahun.
+- **Kosongkan Database** : Sama seperti namanya, menu ini berfungsi untuk mengkosongkan isi dari table atau yang biasanya disebut dengan **TRUNCATE**.
+- **Backup Database** : Dimenu ini user bisa membackup database mereka dan file yang terbackup akan langsung masuk otomatis kedalam folder Downloads.
+- **Modern UI** : Aplikasi ini adalah aplikasi yang dibuat menggunakan framework GUNA UI sehingga menjadi UI yang lebih baik daripada bawaan winforms.
+
+### Tools
+Agar dapat membuka file **SIPP**, maka ada beberapa tools yang harus di install yaitu :
+- Visual Studio 2019
+- .NET Framework 4.7.2
+- XAMPP
+
+### Nuget Package Manager
+Didalam SIPP, terdapat juga beberapa package yang di download. Antara lain :
+- Guna UI - Version 2.0.1.4
+- Mysql.Data - Version 8.0.23
+- MysqlBackup.NET - Version 2.3.4
+- Syroot.Windows.IO.KnownFolders - Version 1.2.3
+
+### Asset
+Untuk asset yang digunakan disini hanyalah gambar dari **Icons8** dan **Flaticon**.
+
+### Screenshot SIPP
+![Tampilan Dashboard]()
+
