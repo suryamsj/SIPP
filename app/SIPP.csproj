@@ -108,7 +108,6 @@
     <Compile Include="controller\PengeluaranDAO.cs" />
     <Compile Include="model\Pengeluaran.cs" />
     <Compile Include="vendor\DGVPrinter.cs" />
-    <Compile Include="vendor\Ganti.cs" />
     <Compile Include="vendor\PrintData.cs" />
     <Compile Include="view\usercontrols\Barang_User.cs">
       <SubType>UserControl</SubType>
