@@ -35,3 +35,20 @@ Untuk asset yang digunakan disini hanyalah gambar dari **Icons8** dan **Flaticon
 ![Tampilan Cari Pengeluaran](https://raw.githubusercontent.com/suryamsj/SIPP/main/screenshot/Cari%20Pengeluaran.PNG)
 ![Tampilan Laporan Pengeluaran](https://raw.githubusercontent.com/suryamsj/SIPP/main/screenshot/Laporan%20Pengeluaran.PNG)
 
+### Kontribusi
+- Fork repo ini (https://github.com/suryamsj/SIPP)
+- Buat branch baru untuk penambahan yang dilakukan
+- Comit perubahan yang dilakukan
+- Push ke branch
+- Buat pull request baru
+
+### Lisensi
+SIPP berlisensi Apache License
+
+### Tentang Pembuat SIPP
+SIPP dibuat oleh Muhammad Surya Jayadiprana
+
+### Donasi
+Anda bisa support saya di
+[Trakteer](https://trakteer.id/nekocode) dan [Saweria](https://saweria.co/suryamsj)
+
