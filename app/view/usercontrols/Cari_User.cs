@@ -50,6 +50,7 @@ namespace SIPP.view.usercontrols
         {
             //Datepicker
             TanggalBeli.Value = DateTime.Today;
+            Tombol_Reset.Enabled = false;
         }
 
         private void Tombol_Cari_Click(object sender, EventArgs e)
@@ -60,12 +61,15 @@ namespace SIPP.view.usercontrols
 
             if (NamaBarang.Text == "")
             {
-                MessageBox.Show("Nama Barang tidak boleh kosong!", "Perhatian");
+                MessageBox.Show("Nama Barang tidak boleh kosong!", "Informasi", MessageBoxButtons.OK,MessageBoxIcon.Warning);
             }
             else
             {
                 try
                 {
+                    //BUTTON
+                    Tombol_Reset.Enabled = true;
+
                     //SCROLLBAR
                     ScrollV = new Guna.UI2.WinForms.Helpers.DataGridViewScrollHelper(DataTable, Vertical, true);
                     ScrollH = new Guna.UI2.WinForms.Helpers.DataGridViewScrollHelper(DataTable, Horizontal, true);
@@ -103,12 +107,24 @@ namespace SIPP.view.usercontrols
                 }
                 catch (Exception ex)
                 {
-                    LabelHarga.Text = "-";
-                    LabelJumlah.Text = "-";
-                    LabelBarang.Text = "-";
-                    MessageBox.Show(ex.Message, "Informasi");
+                    MessageBox.Show(ex.Message, "Gagal", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void Tombol_Reset_Click(object sender, EventArgs e)
+        {
+            //TABLE
+            DataTable.DataSource = null;
+
+            //TEXTBOX
+            LabelHarga.Text = "-";
+            LabelBarang.Text = "-";
+            LabelJumlah.Text = "-";
+            NamaBarang.Text = "";
+
+            //BUTTON
+            Tombol_Reset.Enabled = false;
         }
     }
 }

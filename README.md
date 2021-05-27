@@ -13,6 +13,12 @@
 - **Backup Database** : Dimenu ini user bisa membackup database mereka dan file yang terbackup akan langsung masuk otomatis kedalam folder Downloads.
 - **Modern UI** : Aplikasi ini adalah aplikasi yang dibuat menggunakan framework GUNA UI sehingga menjadi UI yang lebih baik daripada bawaan winforms.
 
+### Penambahan dan Perubahan V1.1
+- **Login** : Saat memulai aplikasi diharuskan untuk login kedalam aplikasi
+- **Daftar** : Agar tidak repot, saya juga membuatkan form daftar. jadi, sebelum anda masuk kedalam applikasi. kamu diharuskan untuk daftar terlebih dahulu baru setelah itu bisa login.
+- **MD5 Hash** : Password yang akan di inputkan ke database adalah hasil dari MD5 Hash.
+- **Menghapus & Mengganti Gambar** : Ada beberapa gambar yang saya hapus dan saya ganti. Agar tidak banyak memakan ukuran program.
+
 ### Tools
 Agar dapat membuka file **SIPP**, maka ada beberapa tools yang harus di install yaitu :
 - Visual Studio 2019

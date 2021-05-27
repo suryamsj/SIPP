@@ -29,17 +29,17 @@ namespace SIPP.view.usercontrols
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.TanggalBeli = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.Tombol_Cari = new Guna.UI2.WinForms.Guna2Button();
             this.label6 = new System.Windows.Forms.Label();
             this.Form_panel = new Guna.UI2.WinForms.Guna2Panel();
+            this.Tombol_Reset = new Guna.UI2.WinForms.Guna2Button();
             this.label3 = new System.Windows.Forms.Label();
             this.Form_header = new Guna.UI2.WinForms.Guna2Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.NamaBarang = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.Vertical = new Guna.UI2.WinForms.Guna2VScrollBar();
@@ -56,6 +56,7 @@ namespace SIPP.view.usercontrols
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.LabelBarang = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.NamaBarang = new Guna.UI2.WinForms.Guna2TextBox();
             this.Form_panel.SuspendLayout();
             this.Form_header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataTable)).BeginInit();
@@ -70,6 +71,7 @@ namespace SIPP.view.usercontrols
             // 
             this.TanggalBeli.Animated = true;
             this.TanggalBeli.BorderColor = System.Drawing.Color.Silver;
+            this.TanggalBeli.BorderRadius = 3;
             this.TanggalBeli.BorderThickness = 1;
             this.TanggalBeli.CheckedState.Parent = this.TanggalBeli;
             this.TanggalBeli.FillColor = System.Drawing.Color.White;
@@ -87,6 +89,8 @@ namespace SIPP.view.usercontrols
             // 
             // Tombol_Cari
             // 
+            this.Tombol_Cari.Animated = true;
+            this.Tombol_Cari.BorderRadius = 3;
             this.Tombol_Cari.CheckedState.Parent = this.Tombol_Cari;
             this.Tombol_Cari.CustomImages.Parent = this.Tombol_Cari;
             this.Tombol_Cari.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(30)))), ((int)(((byte)(133)))));
@@ -115,6 +119,9 @@ namespace SIPP.view.usercontrols
             // 
             // Form_panel
             // 
+            this.Form_panel.BackColor = System.Drawing.Color.Transparent;
+            this.Form_panel.BorderRadius = 3;
+            this.Form_panel.Controls.Add(this.Tombol_Reset);
             this.Form_panel.Controls.Add(this.TanggalBeli);
             this.Form_panel.Controls.Add(this.Tombol_Cari);
             this.Form_panel.Controls.Add(this.label6);
@@ -127,8 +134,26 @@ namespace SIPP.view.usercontrols
             this.Form_panel.ShadowDecoration.Depth = 2;
             this.Form_panel.ShadowDecoration.Enabled = true;
             this.Form_panel.ShadowDecoration.Parent = this.Form_panel;
-            this.Form_panel.Size = new System.Drawing.Size(412, 262);
+            this.Form_panel.Size = new System.Drawing.Size(412, 308);
             this.Form_panel.TabIndex = 4;
+            // 
+            // Tombol_Reset
+            // 
+            this.Tombol_Reset.Animated = true;
+            this.Tombol_Reset.BorderRadius = 3;
+            this.Tombol_Reset.CheckedState.Parent = this.Tombol_Reset;
+            this.Tombol_Reset.CustomImages.Parent = this.Tombol_Reset;
+            this.Tombol_Reset.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(101)))), ((int)(((byte)(166)))));
+            this.Tombol_Reset.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Tombol_Reset.ForeColor = System.Drawing.Color.White;
+            this.Tombol_Reset.HoverState.Parent = this.Tombol_Reset;
+            this.Tombol_Reset.Location = new System.Drawing.Point(12, 254);
+            this.Tombol_Reset.Name = "Tombol_Reset";
+            this.Tombol_Reset.ShadowDecoration.Parent = this.Tombol_Reset;
+            this.Tombol_Reset.Size = new System.Drawing.Size(390, 40);
+            this.Tombol_Reset.TabIndex = 18;
+            this.Tombol_Reset.Text = "Reset";
+            this.Tombol_Reset.Click += new System.EventHandler(this.Tombol_Reset_Click);
             // 
             // label3
             // 
@@ -165,30 +190,6 @@ namespace SIPP.view.usercontrols
             this.label2.Size = new System.Drawing.Size(177, 20);
             this.label2.TabIndex = 3;
             this.label2.Text = "Form cari pengeluaran";
-            // 
-            // NamaBarang
-            // 
-            this.NamaBarang.Animated = true;
-            this.NamaBarang.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.NamaBarang.DefaultText = "";
-            this.NamaBarang.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.NamaBarang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.NamaBarang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.NamaBarang.DisabledState.Parent = this.NamaBarang;
-            this.NamaBarang.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.NamaBarang.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.NamaBarang.FocusedState.Parent = this.NamaBarang;
-            this.NamaBarang.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.NamaBarang.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.NamaBarang.HoverState.Parent = this.NamaBarang;
-            this.NamaBarang.Location = new System.Drawing.Point(12, 84);
-            this.NamaBarang.Name = "NamaBarang";
-            this.NamaBarang.PasswordChar = '\0';
-            this.NamaBarang.PlaceholderText = "";
-            this.NamaBarang.SelectedText = "";
-            this.NamaBarang.ShadowDecoration.Parent = this.NamaBarang;
-            this.NamaBarang.Size = new System.Drawing.Size(390, 40);
-            this.NamaBarang.TabIndex = 0;
             // 
             // label1
             // 
@@ -248,30 +249,30 @@ namespace SIPP.view.usercontrols
             // DataTable
             // 
             this.DataTable.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.DataTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.DataTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.DataTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataTable.BackgroundColor = System.Drawing.Color.White;
             this.DataTable.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DataTable.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DataTable.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.DataTable.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(249)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(241)))), ((int)(((byte)(243)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataTable.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(249)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(241)))), ((int)(((byte)(243)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataTable.DefaultCellStyle = dataGridViewCellStyle6;
             this.DataTable.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DataTable.EnableHeadersVisualStyles = false;
             this.DataTable.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(249)))));
@@ -337,6 +338,7 @@ namespace SIPP.view.usercontrols
             this.guna2Panel7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Panel7.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel7.BorderRadius = 3;
             this.guna2Panel7.Controls.Add(this.LabelHarga);
             this.guna2Panel7.Controls.Add(this.label10);
             this.guna2Panel7.FillColor = System.Drawing.Color.White;
@@ -374,6 +376,7 @@ namespace SIPP.view.usercontrols
             this.guna2Panel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Panel6.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel6.BorderRadius = 3;
             this.guna2Panel6.Controls.Add(this.LabelJumlah);
             this.guna2Panel6.Controls.Add(this.label8);
             this.guna2Panel6.FillColor = System.Drawing.Color.White;
@@ -411,6 +414,7 @@ namespace SIPP.view.usercontrols
             this.guna2Panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Panel5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel5.BorderRadius = 3;
             this.guna2Panel5.Controls.Add(this.LabelBarang);
             this.guna2Panel5.Controls.Add(this.label4);
             this.guna2Panel5.FillColor = System.Drawing.Color.White;
@@ -442,6 +446,33 @@ namespace SIPP.view.usercontrols
             this.label4.Size = new System.Drawing.Size(144, 24);
             this.label4.TabIndex = 6;
             this.label4.Text = "Pengeluaran yang dicari";
+            // 
+            // NamaBarang
+            // 
+            this.NamaBarang.Animated = true;
+            this.NamaBarang.BorderRadius = 3;
+            this.NamaBarang.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.NamaBarang.DefaultText = "";
+            this.NamaBarang.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.NamaBarang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.NamaBarang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.NamaBarang.DisabledState.Parent = this.NamaBarang;
+            this.NamaBarang.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.NamaBarang.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(30)))), ((int)(((byte)(133)))));
+            this.NamaBarang.FocusedState.Parent = this.NamaBarang;
+            this.NamaBarang.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.NamaBarang.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(30)))), ((int)(((byte)(133)))));
+            this.NamaBarang.HoverState.Parent = this.NamaBarang;
+            this.NamaBarang.IconLeft = global::SIPP.Properties.Resources.icons8_package_100px;
+            this.NamaBarang.IconLeftSize = new System.Drawing.Size(25, 25);
+            this.NamaBarang.Location = new System.Drawing.Point(12, 84);
+            this.NamaBarang.Name = "NamaBarang";
+            this.NamaBarang.PasswordChar = '\0';
+            this.NamaBarang.PlaceholderText = "Mie ayam";
+            this.NamaBarang.SelectedText = "";
+            this.NamaBarang.ShadowDecoration.Parent = this.NamaBarang;
+            this.NamaBarang.Size = new System.Drawing.Size(390, 40);
+            this.NamaBarang.TabIndex = 0;
             // 
             // Cari_User
             // 
@@ -501,5 +532,6 @@ namespace SIPP.view.usercontrols
         private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
         public System.Windows.Forms.Label LabelBarang;
         private System.Windows.Forms.Label label4;
+        private Guna.UI2.WinForms.Guna2Button Tombol_Reset;
     }
 }

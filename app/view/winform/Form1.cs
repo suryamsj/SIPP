@@ -104,11 +104,11 @@ namespace SIPP
 
         private void Tombol_Truncate_Click(object sender, EventArgs e)
         {
-            DialogResult pesan = MessageBox.Show("Yakin mau mengkosongkan table di database?", "Perhatian", MessageBoxButtons.YesNo);
+            DialogResult pesan = MessageBox.Show("Yakin mau mengkosongkan table di database?", "Perhatian", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (pesan == DialogResult.Yes)
             {
                 Truncate_Table();
-                MessageBox.Show("Berhasil mengkosongkan database", "Informasi");
+                MessageBox.Show("Berhasil mengkosongkan database", "Informasi",MessageBoxButtons.OK,MessageBoxIcon.Information);
                 RefreshDashboard();
                 RefreshBarang();
             }
@@ -117,6 +117,11 @@ namespace SIPP
         private void Tombol_Backup_Click(object sender, EventArgs e)
         {
             Backup_Database();
+        }
+
+        private void Close_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

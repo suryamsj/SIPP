@@ -63,6 +63,16 @@ namespace SIPP.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap binder_4x {
+            get {
+                object obj = ResourceManager.GetObject("binder@4x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_content_100px {
             get {
                 object obj = ResourceManager.GetObject("icons8_content_100px", resourceCulture);
@@ -76,6 +86,16 @@ namespace SIPP.Properties {
         internal static System.Drawing.Bitmap icons8_content_100px_1 {
             get {
                 object obj = ResourceManager.GetObject("icons8_content_100px_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_customer_100px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_customer_100px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,9 +183,29 @@ namespace SIPP.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_inscription_100px {
+        internal static System.Drawing.Bitmap icons8_lock_100px {
             get {
-                object obj = ResourceManager.GetObject("icons8_inscription_100px", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_lock_100px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_name_tag_100px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_name_tag_100px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_package_100px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_package_100px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -176,6 +216,16 @@ namespace SIPP.Properties {
         internal static System.Drawing.Bitmap icons8_paper_money_100px {
             get {
                 object obj = ResourceManager.GetObject("icons8_paper_money_100px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_pricing_100px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_pricing_100px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -216,6 +266,16 @@ namespace SIPP.Properties {
         internal static System.Drawing.Bitmap icons8_product_100px_1 {
             get {
                 object obj = ResourceManager.GetObject("icons8_product_100px_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_search_100px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_search_100px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

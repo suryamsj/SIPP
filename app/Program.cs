@@ -1,4 +1,5 @@
 ﻿using SIPP.controller;
+using SIPP.view.winform;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,11 +23,11 @@ namespace SIPP
                 connection.OpenConection();
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
-                Application.Run(new SIPP());
+                Application.Run(new Login());
             }
-            catch(Exception e)
+            catch(Exception ex)
             {
-                MessageBox.Show(e.Message,"Aplikasi Gagal Dijalankan");
+                MessageBox.Show(ex.Message, "Gagal", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Application.Exit();
             }
         }

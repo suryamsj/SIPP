@@ -29,9 +29,9 @@ namespace SIPP.view.usercontrols
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Table_Panel = new Guna.UI2.WinForms.Guna2Panel();
             this.Vertical = new Guna.UI2.WinForms.Guna2VScrollBar();
             this.Horizontal = new Guna.UI2.WinForms.Guna2HScrollBar();
@@ -107,30 +107,30 @@ namespace SIPP.view.usercontrols
             // DataTable
             // 
             this.DataTable.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.DataTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            this.DataTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
             this.DataTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataTable.BackgroundColor = System.Drawing.Color.White;
             this.DataTable.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DataTable.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DataTable.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.DataTable.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(249)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(241)))), ((int)(((byte)(243)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataTable.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(249)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(241)))), ((int)(((byte)(243)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataTable.DefaultCellStyle = dataGridViewCellStyle12;
             this.DataTable.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DataTable.EnableHeadersVisualStyles = false;
             this.DataTable.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(249)))));
@@ -226,6 +226,8 @@ namespace SIPP.view.usercontrols
             // 
             // Form_panel
             // 
+            this.Form_panel.BackColor = System.Drawing.Color.Transparent;
+            this.Form_panel.BorderRadius = 3;
             this.Form_panel.Controls.Add(this.Tombol_Print);
             this.Form_panel.Controls.Add(this.TanggalBeli);
             this.Form_panel.Controls.Add(this.Tombol_Excel);
@@ -243,6 +245,8 @@ namespace SIPP.view.usercontrols
             // 
             // Tombol_Print
             // 
+            this.Tombol_Print.Animated = true;
+            this.Tombol_Print.BorderRadius = 3;
             this.Tombol_Print.CheckedState.Parent = this.Tombol_Print;
             this.Tombol_Print.CustomImages.Parent = this.Tombol_Print;
             this.Tombol_Print.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(157)))), ((int)(((byte)(182)))));
@@ -261,6 +265,7 @@ namespace SIPP.view.usercontrols
             // 
             this.TanggalBeli.Animated = true;
             this.TanggalBeli.BorderColor = System.Drawing.Color.Silver;
+            this.TanggalBeli.BorderRadius = 3;
             this.TanggalBeli.BorderThickness = 1;
             this.TanggalBeli.CheckedState.Parent = this.TanggalBeli;
             this.TanggalBeli.FillColor = System.Drawing.Color.White;
@@ -278,6 +283,8 @@ namespace SIPP.view.usercontrols
             // 
             // Tombol_Excel
             // 
+            this.Tombol_Excel.Animated = true;
+            this.Tombol_Excel.BorderRadius = 3;
             this.Tombol_Excel.CheckedState.Parent = this.Tombol_Excel;
             this.Tombol_Excel.CustomImages.Parent = this.Tombol_Excel;
             this.Tombol_Excel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(101)))), ((int)(((byte)(166)))));
@@ -294,6 +301,8 @@ namespace SIPP.view.usercontrols
             // 
             // Tombol_Cari
             // 
+            this.Tombol_Cari.Animated = true;
+            this.Tombol_Cari.BorderRadius = 3;
             this.Tombol_Cari.CheckedState.Parent = this.Tombol_Cari;
             this.Tombol_Cari.CustomImages.Parent = this.Tombol_Cari;
             this.Tombol_Cari.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(30)))), ((int)(((byte)(133)))));
@@ -325,6 +334,7 @@ namespace SIPP.view.usercontrols
             this.guna2Panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Panel5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel5.BorderRadius = 3;
             this.guna2Panel5.Controls.Add(this.LabelTotal);
             this.guna2Panel5.Controls.Add(this.label4);
             this.guna2Panel5.FillColor = System.Drawing.Color.White;

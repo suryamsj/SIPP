@@ -75,15 +75,17 @@ namespace SIPP.view.usercontrols
             DataTable.Columns[4].HeaderText = "Tanggal Pembelian";
             DataTable.Columns[4].DefaultCellStyle.Format = "dddd, d MMMM yyyy";
 
-            //Datepicker
+            //Utility
             TanggalBeli.Value = DateTime.Today;
+            Tombol_Ubah.Enabled = false;
+            Tombol_Hapus.Enabled = false;
         }
 
         private void Tombol_Simpan_Click(object sender, EventArgs e)
         {
             if(NamaBarang.Text == "" || JumlahBarang.Value == 0 || HargaBarang.Text == "")
             {
-                MessageBox.Show("Form tidak boleh kosong!", "Info");
+                MessageBox.Show("Form tidak boleh kosong!", "Informasi",MessageBoxButtons.OK,MessageBoxIcon.Warning);
             }
             else
             {
@@ -107,7 +109,7 @@ namespace SIPP.view.usercontrols
         {
             if (NamaBarang.Text == "" || JumlahBarang.Value == 0 || HargaBarang.Text == "")
             {
-                MessageBox.Show("Form tidak boleh kosong!", "Info");
+                MessageBox.Show("Form tidak boleh kosong!", "Infoormasi", MessageBoxButtons.OK,MessageBoxIcon.Warning);
             }
             else
             {
@@ -130,7 +132,7 @@ namespace SIPP.view.usercontrols
 
         private void Tombol_Hapus_Click(object sender, EventArgs e)
         {
-            DialogResult pesan = MessageBox.Show("Yakin mau hapus data ini?", "Info", MessageBoxButtons.YesNo);
+            DialogResult pesan = MessageBox.Show("Yakin mau hapus data ini?", "Info", MessageBoxButtons.YesNo,MessageBoxIcon.Question);
             if(pesan == DialogResult.Yes)
             {
                 pengeluaran.HapusData(id);
@@ -141,7 +143,10 @@ namespace SIPP.view.usercontrols
 
         private void DataTable_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(e.RowIndex >= 0)
+            Tombol_Ubah.Enabled = true;
+            Tombol_Hapus.Enabled = true;
+
+            if (e.RowIndex >= 0)
             {
                 id = DataTable.Rows[e.RowIndex].Cells[0].Value.ToString();
                 NamaBarang.Text = DataTable.Rows[e.RowIndex].Cells[1].Value.ToString();

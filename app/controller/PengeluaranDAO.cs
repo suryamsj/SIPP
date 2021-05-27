@@ -21,12 +21,12 @@ namespace SIPP.controller
                 connection.OpenConection();
                 connection.ExecuteQueries("INSERT INTO barang (nm_barang, jml_barang, hg_barang, tgl_beli) VALUES ('" + pengeluaran.Namabarang + "', '" + pengeluaran.Jumlahbarang + "','" + pengeluaran.Hargabarang + "','" + pengeluaran.Tanggalpembelian + "')");
                 status = true;
-                MessageBox.Show("Tambah Data berhasil dilakukan", "Info");
+                MessageBox.Show("Tambah Data berhasil dilakukan", "Informasi", MessageBoxButtons.OK,MessageBoxIcon.Information);
                 connection.CloseConnection();
             }
-            catch (MySqlException)
+            catch (Exception ex)
             {
-                MessageBox.Show("Data gagal ditambahkan", "Info");
+                MessageBox.Show(ex.Message, "Gagal", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             return status;
         }
@@ -40,12 +40,12 @@ namespace SIPP.controller
                 connection.ExecuteQueries("UPDATE barang SET nm_barang='" + pengeluaran.Namabarang + "'," + "jml_barang='" + pengeluaran.Jumlahbarang + "'," +
                     "hg_barang='" + pengeluaran.Hargabarang + "'," + "tgl_beli='" + pengeluaran.Tanggalpembelian + "' WHERE id='" + id + "'");
                 status = true;
-                MessageBox.Show("Ubah Data berhasil dilakukan", "Info");
+                MessageBox.Show("Ubah Data berhasil dilakukan", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 connection.CloseConnection();
             }
-            catch (MySqlException)
+            catch (Exception ex)
             {
-                MessageBox.Show("Data gagal diubah", "Info");
+                MessageBox.Show(ex.Message, "Gagal", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             return status;
         }
@@ -58,12 +58,12 @@ namespace SIPP.controller
                 connection.OpenConection();
                 connection.ExecuteQueries("DELETE FROM barang WHERE id='" + id + "'");
                 status = true;
-                MessageBox.Show("Data berhasil dihapus", "Info");
+                MessageBox.Show("Data berhasil dihapus", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 connection.CloseConnection();
             }
-            catch (MySqlException)
+            catch (Exception ex)
             {
-                MessageBox.Show("Data gagal dihapus", "Info");
+                MessageBox.Show(ex.Message, "Gagal", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             return status;
         }

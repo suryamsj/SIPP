@@ -79,14 +79,19 @@ namespace SIPP.view.usercontrols
 
         private void Laporan_User_Load(object sender, EventArgs e)
         {
-            //Tanggal
+            //TAMBAHAN
             TanggalBeli.Value = DateTime.Today;
+            Tombol_Excel.Enabled = false;
+            Tombol_Print.Enabled = false;
         }
 
         private void Tombol_Cari_Click(object sender, EventArgs e)
         {
             try
             {
+                Tombol_Excel.Enabled = true;
+                Tombol_Print.Enabled = true;
+
                 int tahun = TanggalBeli.Value.Year;
                 int bulan = TanggalBeli.Value.Month;
 
@@ -117,7 +122,7 @@ namespace SIPP.view.usercontrols
             catch(Exception ex)
             {
                 LabelTotal.Text = "-";
-                MessageBox.Show(ex.Message, "Informasi");
+                MessageBox.Show(ex.Message, "Gagal", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
@@ -153,7 +158,7 @@ namespace SIPP.view.usercontrols
             }
             catch(Exception ex)
             {
-                MessageBox.Show(ex.Message, "Informasi");
+                MessageBox.Show(ex.Message, "Gagal", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

@@ -62,29 +62,28 @@ namespace SIPP.controller
                 backup.ExportToFile(file);
                 kon.Close();
 
-                MessageBox.Show("Database berhasil dibackup. File backup berada di " + FolderDownload, "Informasi");
+                MessageBox.Show("Database berhasil dibackup. File backup berada di " + FolderDownload, "Informasi", MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
             catch (Exception e)
             {
-                MessageBox.Show(e.Message, "Gagal backup database");
+                MessageBox.Show(e.Message, "Gagal backup database",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
 
         }
 
-        public void TruncateTable(string Table_)
+        public void TruncateTable(string table)
         {
-
             try
             {
-                string query = "TRUNCATE TABLE " + Table_;
+                string query = "TRUNCATE TABLE " + table;
                 OpenConection();
                 ExecuteQueries(query);
                 CloseConnection();
-                MessageBox.Show("Berhasil mengkosongkan table di database");
+                MessageBox.Show("Berhasil mengkosongkan table di database", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch(Exception e)
             {
-                MessageBox.Show(e.Message,"Gagal Mengkosongkan table di database");
+                MessageBox.Show(e.Message,"Gagal Mengkosongkan table di database", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

@@ -38,12 +38,10 @@ namespace SIPP.view.usercontrols
             this.DataTable = new Guna.UI2.WinForms.Guna2DataGridView();
             this.Table_header = new Guna.UI2.WinForms.Guna2Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.NamaBarang = new Guna.UI2.WinForms.Guna2TextBox();
             this.Form_header = new Guna.UI2.WinForms.Guna2Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.HargaBarang = new Guna.UI2.WinForms.Guna2TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.Tombol_Simpan = new Guna.UI2.WinForms.Guna2Button();
@@ -52,6 +50,8 @@ namespace SIPP.view.usercontrols
             this.TanggalBeli = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.Form_panel = new Guna.UI2.WinForms.Guna2Panel();
             this.JumlahBarang = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.HargaBarang = new Guna.UI2.WinForms.Guna2TextBox();
+            this.NamaBarang = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Table_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataTable)).BeginInit();
@@ -193,30 +193,6 @@ namespace SIPP.view.usercontrols
             this.label7.TabIndex = 4;
             this.label7.Text = "Table Data pengeluaran";
             // 
-            // NamaBarang
-            // 
-            this.NamaBarang.Animated = true;
-            this.NamaBarang.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.NamaBarang.DefaultText = "";
-            this.NamaBarang.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.NamaBarang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.NamaBarang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.NamaBarang.DisabledState.Parent = this.NamaBarang;
-            this.NamaBarang.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.NamaBarang.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.NamaBarang.FocusedState.Parent = this.NamaBarang;
-            this.NamaBarang.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.NamaBarang.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.NamaBarang.HoverState.Parent = this.NamaBarang;
-            this.NamaBarang.Location = new System.Drawing.Point(12, 84);
-            this.NamaBarang.Name = "NamaBarang";
-            this.NamaBarang.PasswordChar = '\0';
-            this.NamaBarang.PlaceholderText = "";
-            this.NamaBarang.SelectedText = "";
-            this.NamaBarang.ShadowDecoration.Parent = this.NamaBarang;
-            this.NamaBarang.Size = new System.Drawing.Size(390, 40);
-            this.NamaBarang.TabIndex = 0;
-            // 
             // Form_header
             // 
             this.Form_header.BackColor = System.Drawing.Color.Transparent;
@@ -265,30 +241,6 @@ namespace SIPP.view.usercontrols
             this.label4.TabIndex = 6;
             this.label4.Text = "Jumlah";
             // 
-            // HargaBarang
-            // 
-            this.HargaBarang.Animated = true;
-            this.HargaBarang.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.HargaBarang.DefaultText = "";
-            this.HargaBarang.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.HargaBarang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.HargaBarang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.HargaBarang.DisabledState.Parent = this.HargaBarang;
-            this.HargaBarang.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.HargaBarang.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.HargaBarang.FocusedState.Parent = this.HargaBarang;
-            this.HargaBarang.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.HargaBarang.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.HargaBarang.HoverState.Parent = this.HargaBarang;
-            this.HargaBarang.Location = new System.Drawing.Point(12, 258);
-            this.HargaBarang.Name = "HargaBarang";
-            this.HargaBarang.PasswordChar = '\0';
-            this.HargaBarang.PlaceholderText = "";
-            this.HargaBarang.SelectedText = "";
-            this.HargaBarang.ShadowDecoration.Parent = this.HargaBarang;
-            this.HargaBarang.Size = new System.Drawing.Size(390, 40);
-            this.HargaBarang.TabIndex = 7;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -315,13 +267,15 @@ namespace SIPP.view.usercontrols
             // 
             // Tombol_Simpan
             // 
+            this.Tombol_Simpan.Animated = true;
+            this.Tombol_Simpan.BorderRadius = 3;
             this.Tombol_Simpan.CheckedState.Parent = this.Tombol_Simpan;
             this.Tombol_Simpan.CustomImages.Parent = this.Tombol_Simpan;
             this.Tombol_Simpan.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(30)))), ((int)(((byte)(133)))));
             this.Tombol_Simpan.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Tombol_Simpan.ForeColor = System.Drawing.Color.White;
             this.Tombol_Simpan.HoverState.Parent = this.Tombol_Simpan;
-            this.Tombol_Simpan.Location = new System.Drawing.Point(12, 395);
+            this.Tombol_Simpan.Location = new System.Drawing.Point(12, 407);
             this.Tombol_Simpan.Name = "Tombol_Simpan";
             this.Tombol_Simpan.ShadowDecoration.Parent = this.Tombol_Simpan;
             this.Tombol_Simpan.Size = new System.Drawing.Size(390, 40);
@@ -331,13 +285,15 @@ namespace SIPP.view.usercontrols
             // 
             // Tombol_Ubah
             // 
+            this.Tombol_Ubah.Animated = true;
+            this.Tombol_Ubah.BorderRadius = 3;
             this.Tombol_Ubah.CheckedState.Parent = this.Tombol_Ubah;
             this.Tombol_Ubah.CustomImages.Parent = this.Tombol_Ubah;
             this.Tombol_Ubah.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(101)))), ((int)(((byte)(166)))));
             this.Tombol_Ubah.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Tombol_Ubah.ForeColor = System.Drawing.Color.White;
             this.Tombol_Ubah.HoverState.Parent = this.Tombol_Ubah;
-            this.Tombol_Ubah.Location = new System.Drawing.Point(12, 441);
+            this.Tombol_Ubah.Location = new System.Drawing.Point(12, 453);
             this.Tombol_Ubah.Name = "Tombol_Ubah";
             this.Tombol_Ubah.ShadowDecoration.Parent = this.Tombol_Ubah;
             this.Tombol_Ubah.Size = new System.Drawing.Size(390, 40);
@@ -347,13 +303,15 @@ namespace SIPP.view.usercontrols
             // 
             // Tombol_Hapus
             // 
+            this.Tombol_Hapus.Animated = true;
+            this.Tombol_Hapus.BorderRadius = 3;
             this.Tombol_Hapus.CheckedState.Parent = this.Tombol_Hapus;
             this.Tombol_Hapus.CustomImages.Parent = this.Tombol_Hapus;
             this.Tombol_Hapus.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(157)))), ((int)(((byte)(182)))));
             this.Tombol_Hapus.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Tombol_Hapus.ForeColor = System.Drawing.Color.White;
             this.Tombol_Hapus.HoverState.Parent = this.Tombol_Hapus;
-            this.Tombol_Hapus.Location = new System.Drawing.Point(12, 487);
+            this.Tombol_Hapus.Location = new System.Drawing.Point(12, 499);
             this.Tombol_Hapus.Name = "Tombol_Hapus";
             this.Tombol_Hapus.ShadowDecoration.Parent = this.Tombol_Hapus;
             this.Tombol_Hapus.Size = new System.Drawing.Size(390, 40);
@@ -365,6 +323,7 @@ namespace SIPP.view.usercontrols
             // 
             this.TanggalBeli.Animated = true;
             this.TanggalBeli.BorderColor = System.Drawing.Color.Silver;
+            this.TanggalBeli.BorderRadius = 3;
             this.TanggalBeli.BorderThickness = 1;
             this.TanggalBeli.CheckedState.Parent = this.TanggalBeli;
             this.TanggalBeli.FillColor = System.Drawing.Color.White;
@@ -382,6 +341,8 @@ namespace SIPP.view.usercontrols
             // 
             // Form_panel
             // 
+            this.Form_panel.BackColor = System.Drawing.Color.Transparent;
+            this.Form_panel.BorderRadius = 3;
             this.Form_panel.Controls.Add(this.JumlahBarang);
             this.Form_panel.Controls.Add(this.TanggalBeli);
             this.Form_panel.Controls.Add(this.Tombol_Hapus);
@@ -400,12 +361,13 @@ namespace SIPP.view.usercontrols
             this.Form_panel.ShadowDecoration.Depth = 2;
             this.Form_panel.ShadowDecoration.Enabled = true;
             this.Form_panel.ShadowDecoration.Parent = this.Form_panel;
-            this.Form_panel.Size = new System.Drawing.Size(412, 539);
+            this.Form_panel.Size = new System.Drawing.Size(412, 553);
             this.Form_panel.TabIndex = 1;
             // 
             // JumlahBarang
             // 
             this.JumlahBarang.BackColor = System.Drawing.Color.Transparent;
+            this.JumlahBarang.BorderRadius = 3;
             this.JumlahBarang.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.JumlahBarang.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.JumlahBarang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -422,6 +384,62 @@ namespace SIPP.view.usercontrols
             this.JumlahBarang.ShadowDecoration.Parent = this.JumlahBarang;
             this.JumlahBarang.Size = new System.Drawing.Size(390, 40);
             this.JumlahBarang.TabIndex = 3;
+            this.JumlahBarang.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(30)))), ((int)(((byte)(133)))));
+            this.JumlahBarang.UpDownButtonForeColor = System.Drawing.Color.White;
+            // 
+            // HargaBarang
+            // 
+            this.HargaBarang.Animated = true;
+            this.HargaBarang.BorderRadius = 3;
+            this.HargaBarang.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.HargaBarang.DefaultText = "";
+            this.HargaBarang.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.HargaBarang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.HargaBarang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.HargaBarang.DisabledState.Parent = this.HargaBarang;
+            this.HargaBarang.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.HargaBarang.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(30)))), ((int)(((byte)(133)))));
+            this.HargaBarang.FocusedState.Parent = this.HargaBarang;
+            this.HargaBarang.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.HargaBarang.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(30)))), ((int)(((byte)(133)))));
+            this.HargaBarang.HoverState.Parent = this.HargaBarang;
+            this.HargaBarang.IconLeft = global::SIPP.Properties.Resources.icons8_pricing_100px;
+            this.HargaBarang.IconLeftSize = new System.Drawing.Size(25, 25);
+            this.HargaBarang.Location = new System.Drawing.Point(12, 258);
+            this.HargaBarang.Name = "HargaBarang";
+            this.HargaBarang.PasswordChar = '\0';
+            this.HargaBarang.PlaceholderText = "1000";
+            this.HargaBarang.SelectedText = "";
+            this.HargaBarang.ShadowDecoration.Parent = this.HargaBarang;
+            this.HargaBarang.Size = new System.Drawing.Size(390, 40);
+            this.HargaBarang.TabIndex = 7;
+            // 
+            // NamaBarang
+            // 
+            this.NamaBarang.Animated = true;
+            this.NamaBarang.BorderRadius = 3;
+            this.NamaBarang.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.NamaBarang.DefaultText = "";
+            this.NamaBarang.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.NamaBarang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.NamaBarang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.NamaBarang.DisabledState.Parent = this.NamaBarang;
+            this.NamaBarang.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.NamaBarang.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(30)))), ((int)(((byte)(133)))));
+            this.NamaBarang.FocusedState.Parent = this.NamaBarang;
+            this.NamaBarang.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.NamaBarang.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(30)))), ((int)(((byte)(133)))));
+            this.NamaBarang.HoverState.Parent = this.NamaBarang;
+            this.NamaBarang.IconLeft = global::SIPP.Properties.Resources.icons8_package_100px;
+            this.NamaBarang.IconLeftSize = new System.Drawing.Size(25, 25);
+            this.NamaBarang.Location = new System.Drawing.Point(12, 84);
+            this.NamaBarang.Name = "NamaBarang";
+            this.NamaBarang.PasswordChar = '\0';
+            this.NamaBarang.PlaceholderText = "Mie ayam";
+            this.NamaBarang.SelectedText = "";
+            this.NamaBarang.ShadowDecoration.Parent = this.NamaBarang;
+            this.NamaBarang.Size = new System.Drawing.Size(390, 40);
+            this.NamaBarang.TabIndex = 0;
             // 
             // label1
             // 

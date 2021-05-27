@@ -104,7 +104,7 @@ namespace SIPP.view.usercontrols
             }
             catch
             {
-                MessageBox.Show("Data untuk hari ini kosong. Silahkan input data hari ini","Informasi");
+                MessageBox.Show("Data pengeluaran untuk hari ini kosong, silahkan input pengeluaran hari ini terlebih dahulu untuk melihat data", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 label2.Text = "Rp. -";
                 label3.Text = "Rp. -";
                 label4.Text = "Rp. -";
