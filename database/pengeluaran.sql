@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 10, 2021 at 05:04 AM
+-- Generation Time: May 27, 2021 at 02:32 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 7.4.14
 
@@ -24,6 +24,19 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `admin`
+--
+
+CREATE TABLE `admin` (
+  `id` int(11) NOT NULL,
+  `nama` varchar(150) NOT NULL,
+  `username` varchar(15) NOT NULL,
+  `password` varchar(150) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `barang`
 --
 
@@ -36,19 +49,15 @@ CREATE TABLE `barang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `barang`
---
-
-INSERT INTO `barang` (`id`, `nm_barang`, `jml_barang`, `hg_barang`, `tgl_beli`) VALUES
-(1, 'Mie ayam', 2, 20000, '2021-04-10'),
-(2, 'Sate ayam', 1, 25000, '2021-04-10'),
-(3, 'Seblak', 5, 50000, '2021-04-10'),
-(4, 'Mesin air', 1, 3000000, '2021-04-10'),
-(5, 'Pulsa', 1, 150000, '2021-04-10');
-
---
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `username` (`username`);
 
 --
 -- Indexes for table `barang`
@@ -61,10 +70,16 @@ ALTER TABLE `barang`
 --
 
 --
+-- AUTO_INCREMENT for table `admin`
+--
+ALTER TABLE `admin`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `barang`
 --
 ALTER TABLE `barang`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
