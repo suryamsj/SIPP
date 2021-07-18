@@ -3,6 +3,10 @@
 ### Tentang SIPP
 **SIPP** adalah singkatan dari Sistem Informasi Pencatatan Pengeluaran. SIPP dibuat menggunakan konsep OOP dan bahasa pemrograman C#.
 
+### Donasi
+Anda bisa support saya di
+<a href="https://trakteer.id/suryamsj/tip" target="_blank"><img id="wse-buttons-preview" src="https://cdn.trakteer.id/images/embed/trbtn-red-3.jpg" height="40" style="border: 0px; height: 40px;" alt="Trakteer Saya"></a>
+
 ### Menu dan Fitur
 **SIPP** memiliki beberapa menu dan fitur seperti layaknya aplikasi pencatatan pengeluaran yaitu :
 - **Dashboard** : dimenu ini user bisa melihat informasi terkait pengeluar hari ini, bulan ini, tahun ini, paling mahal dan paling murah.
@@ -53,8 +57,3 @@ SIPP berlisensi Apache License
 
 ### Tentang Pembuat SIPP
 SIPP dibuat oleh Muhammad Surya Jayadiprana
-
-### Donasi
-Anda bisa support saya di
-[Trakteer](https://trakteer.id/nekocode) dan [Saweria](https://saweria.co/suryamsj)
-
