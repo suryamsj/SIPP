@@ -4,7 +4,6 @@
 **SIPP** adalah singkatan dari Sistem Informasi Pencatatan Pengeluaran. SIPP dibuat menggunakan konsep OOP dan bahasa pemrograman C#.
 
 ### Donasi
-Anda bisa support saya di
 <a href="https://trakteer.id/suryamsj/tip" target="_blank"><img id="wse-buttons-preview" src="https://cdn.trakteer.id/images/embed/trbtn-red-3.jpg" height="40" style="border: 0px; height: 40px;" alt="Trakteer Saya"></a>
 
 ### Menu dan Fitur
